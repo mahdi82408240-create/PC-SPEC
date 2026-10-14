@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <title></title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<div id="app">
+
+
+    <!-- =====================================
+         HOME
+    ====================================== -->
+
+    <section
+        id="homePage"
+        class="page active"
+    >
+
+        <div class="hero">
+
+            <span class="hero-label">
+                DONYA DIGEH
+            </span>
+
+            <h1>
+                موسیقی
+                <span>خودت</span>
+                را در دنیا دیگه پیدا کن
+            </h1>
+
+            <p>
+                جدیدترین آهنگ‌ها و موزیک‌های مورد علاقه‌ات را اینجا پیدا کن.
+            </p>
+
+        </div>
+
+
+        <div class="section-header">
+
+            <div>
+
+                <span>
+                    LATEST
+                </span>
+
+                <h2>
+                    جدیدترین آهنگ‌ها
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="latestSongs"
+            class="songs-list"
+        ></div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SEARCH
+    ====================================== -->
+
+    <section
+        id="searchPage"
+        class="page"
+    >
+
+        <div class="page-title">
+
+            <span>
+                SEARCH
+            </span>
+
+            <h1>
+                جستجوی آهنگ
+            </h1>
+
+        </div>
+
+
+        <div class="search-wrapper">
+
+            <div class="search-box">
+
+                <input
+                    id="searchInput"
+                    type="text"
+                    placeholder="نام آهنگ یا خواننده..."
+                    autocomplete="off"
+                >
+
+                <button
+                    id="clearSearch"
+                    type="button"
+                    style="display:none;"
+                >
+                    ×
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="searchResults"
+            class="songs-list"
+        >
+
+            <div class="empty-state">
+
+                <div class="empty-icon">
+                    ♪
+                </div>
+
+                <h3>
+                    چیزی جستجو کنید
+                </h3>
+
+                <p>
+                    نام آهنگ یا خواننده را وارد کنید.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         CATEGORIES
+    ====================================== -->
+
+    <section
+        id="categoriesPage"
+        class="page"
+    >
+
+        <div class="page-title">
+
+            <span>
+                CATEGORIES
+            </span>
+
+            <h1>
+                دسته‌بندی‌ها
+            </h1>
+
+        </div>
+
+
+        <div
+            id="categoriesGrid"
+            class="categories-grid"
+        ></div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         PLAYLIST
+    ====================================== -->
+
+    <section
+        id="playlistPage"
+        class="page"
+    >
+
+        <div class="page-title">
+
+            <span>
+                PLAYLIST
+            </span>
+
+            <h1>
+                پلی‌لیست من
+            </h1>
+
+        </div>
+
+
+        <div
+            id="playlistSongs"
+            class="songs-list"
+        ></div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SONG PAGE
+    ====================================== -->
+
+    <section
+        id="songPage"
+        class="page song-page"
+    >
+
+        <button
+            id="songBackButton"
+            class="song-back"
+            type="button"
+        >
+            <span>→</span>
+            برگشت
+        </button>
+
+
+        <div
+            id="songDetails"
+            class="song-details"
+        ></div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         BOTTOM NAV
+    ====================================== -->
+
+    <nav class="bottom-nav">
+
+        <button
+            class="nav-item active"
+            data-page="homePage"
+            type="button"
+        >
+
+            <span class="nav-icon">
+                ⌂
+            </span>
+
+            <span>
+                خانه
+            </span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            data-page="searchPage"
+            type="button"
+        >
+
+            <span class="nav-icon">
+                ⌕
+            </span>
+
+            <span>
+                جستجو
+            </span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            data-page="categoriesPage"
+            type="button"
+        >
+
+            <span class="nav-icon">
+                ◇
+            </span>
+
+            <span>
+                دسته‌بندی
+            </span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            data-page="playlistPage"
+            type="button"
+        >
+
+            <span class="nav-icon">
+                ♡
+            </span>
+
+            <span>
+                پلی‌لیست
+            </span>
+
+        </button>
+
+    </nav>
+
+</div>
+
+
+<!-- DATA -->
+
+<script src="songs.js"></script>
+<script src="categories.js"></script>
+
+<!-- APP -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
